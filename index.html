@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaPet</title>
+    <link rel="icon" href="./Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - index/styles.css">
+</head>
+<body>
+    <!-- Cabecalho -->
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="tela - produtos e servicos.html">
+                <p>Produtos e Serviços</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - login.html">
+                <p>Login</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - cadastro.html">
+                <p>Cadastro</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Inicial -->
+        <div class="banner">
+            <div class="banner__texto">
+                <h2 class="banner__texto__titulo">Bem Vindo a AmaPet</h2>
+                <p class="banner__texto__texto">Oferecemos tudo o que seu pet precisa para ser feliz e saudável: desde produtos de qualidade até serviços especializados, com todo o carinho e dedicação que eles merecem. Aqui, cada pet é tratado como parte da família!</p>
+            </div>
+            <img src="./Img/Img banner.png" alt="Imagem grupo de animais">
+        </div>
+
+        <!-- Seleção de Pets -->
+        <div class="selecao__pet">
+            <h2 class="selecao__pet__titulo">Selecione o seu PET</h2>
+            <div>
+                <a class="selecao__pet__escolhas" href="./tela - login.html">
+                    <img src="./Img/Gato.png">
+                </a>
+                <a class="selecao__pet__escolhas" href="./tela - login.html">
+                    <img src="./Img/Cachorro.png">
+                </a>
+                <a class="selecao__pet__escolhas" href="./tela - login.html">
+                    <img src="./Img/Pássaro.png">
+                </a>
+                <a class="selecao__pet__escolhas" href="./tela - login.html">
+                    <img src="./Img/Peixe.png">
+                </a>
+            </div>
+        </div>
+
+        <!-- Linha divisória -->
+        <div class="divisao__pets__novidades"></div>
+
+        <!-- Novidades -->
+        <div class="novidades">
+            <h4 class="novidades__titulo">Cadastre-se e recebe novidades e promoções exclusivas</h4>
+            <a class="novidades__botao" href="./tela - login.html">Entrar</a>
+        </div>
+        
+        <div class="divisao__novidades__footer"></div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Script em JS para retornar o nome do usuário 
+    <script>
+        // Recupera o nome do usuário do localStorage
+        var username = localStorage.getItem('username');
+        
+        // Exibe o nome do usuário no header
+        if (username) {
+            document.getElementById('user-menu').innerHTML = `
+                <span>Bem-vindo, ${username}</span>
+                `;
+        } else {
+            document.getElementById('user-menu').innerHTML = `
+                <a href="./tela - login.html">Login</a>
+                <a href="./tela - cadastro.html">Cadastro</a>
+            `;
+        }
+    </script> -->
+</body>
+</html>

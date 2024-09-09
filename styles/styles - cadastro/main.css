@@ -1,0 +1,55 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../Img/Imagem-Fundo-Entrar.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-box {
+    background-color: #ECECEC;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-box input[type="text"], 
+.login-box input[type="email"], 
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 1em;
+    margin: 10px 0;
+    border: 1px solid #3b8177;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 3em;
+    font: var(--fonte-principal);
+}
+
+.login-box input[type="submit"] {
+    background-color: #3b8177;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #327066;
+}

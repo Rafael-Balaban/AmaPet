@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    font-size: 16px;
+    font-weight: 400;
+    color: #605E5E;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./../Img/Imagem\ fundo\ cachorro.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.formulario {
+    background-color: #ECECEC;
+    padding: 1em 3em;
+    width: 30%;
+    height: 45%;
+    border-radius: 15px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-row-1 {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.porte-medio,
+.porte-grande {
+    margin-left: 3.2em;
+}
+
+.porte-pequeno {
+    margin-left: 0em;
+}
+
+.form-row-2 {
+    display: flex;
+}
+
+input#nome, input#porte, input#cor, input#tipo, input#idade {
+    background-color: #C1C1C1;
+    padding: 0.4em;
+    border-radius: 15px;
+    border-color: transparent;
+}
+
+.form-row-1-nome,
+.form-row-1-porte,
+.form-row-2-cor,
+.form-row-2-tipo,
+.form-row-2-idade {
+    margin: 0.5em;;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: #3A8E7C;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30%;
+}
+
+button:hover {
+    background-color: #2F6E61;
+}

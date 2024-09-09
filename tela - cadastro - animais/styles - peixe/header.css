@@ -1,0 +1,31 @@
+header {
+    background-color: var(--verde-principal);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho__logo{
+    margin: 1em 3em;
+}
+.botao-sair {
+    display: flex;
+    margin: 0 4em;
+    align-items: center;
+    background-color: #53A798;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botao-sair:hover {
+    background-color: #2F6E61;
+}
+
+.icone-sair img {
+    margin-right: 10px;
+    width: 20px; /* Ajuste conforme necessário */
+}

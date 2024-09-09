@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaPet - Produtos e Serviços</title>
+    <link rel="icon" href="./Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - produtos e servicos/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header>
+        <a href="./tela - principal - cadastrado.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="tela - produtos e servicos.html">
+                <p>Produtos e Serviços</p>
+            </a>
+            <div class="cabecalho__user" id="user-menu">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Área de Produtos -->
+        <div class="produtos">
+            <h2 class="produtos__titulo">Produtos</h2>
+            <p class="produtos__texto">Aqui você encontrará os melhores produtos para o seu animal de estimação!</p>
+            
+            <div class="produtos__produtos">
+                <div class="produtos__produtos__item">
+                    <img src="./Img/Produto - Cachorro.png">
+                    <p class="produtos__produtos__item__texto">Ração Origens Class Cães Adultos Carne E Frango - 15 Kg - R$99,99</p>
+                    <a class="produtos__produtos__item__botao" href="./tela - login.html">Comprar</a>
+                </div>
+                <div class="produtos__produtos__item__gato">
+                    <img src="./Img/Produto - Gato.png">
+                    <p class="produtos__produtos__item__texto__gato">Ração Origens Premium Especial Para Gatos Castrados Sabor Frango - 1Kg - R$9,99</p>
+                    <a class="produtos__produtos__item__botao" href="./tela - login.html">Comprar</a>
+                </div>
+                <div class="produtos__produtos__item">
+                    <img src="./Img/Produto - Passaro.png">
+                    <p class="produtos__produtos__item__texto">Ração Pássaros Nativos - 500g - R$6,99</p>
+                    <a class="produtos__produtos__item__botao" href="./tela - login.html">Comprar</a>
+                </div>
+                <div class="produtos__produtos__item">
+                    <img src="./Img/Produto - Peixe.png">
+                    <p class="produtos__produtos__item__texto">Ração Peixe Juvenil - 25Kg - R$59,99</p>
+                    <a class="produtos__produtos__item__botao" href="./tela - login.html">Comprar</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Área de Serviços -->
+        <div class="servicos">
+            <h2 class="servicos__titulo">Serviços</h2>
+            <p class="servicos__texto">Somente os melhores serviços para o seu pet</p>
+
+            <div class="servicos__item">
+                <h3 class="servicos__titulo">Banho</h3>
+                
+                <div class="container">
+                    <div class="servicos__1coluna">
+                        <p class="servicos__1coluna__texto">Deixe seu pet limpo e cheiroso com nossos serviços de banho especializado para cães e gatos. Cuidamos com carinho e atenção para que eles saiam felizes e renovados! - R$49,99</p>
+                        <p class="servicos__1coluna__aviso">Atenção, disponível somente para cães e gatos!</p>
+                        <a class="servicos__1coluna__botao" href="./tela - login.html">AGENDE AGORA</a>
+                    </div>
+                    <img class="servicos__imagem" src="./Img/Img - Serviço Banho.png">
+                </div>
+            </div>
+
+            <div class="servicos__item">
+                <h3 class="servicos__titulo">Tosa</h3>
+                
+                <div class="container">
+                    <div class="servicos__1coluna">
+                        <p class="servicos__1coluna__texto">Renove o visual do seu pet com nossos serviços de tosa. Cuidamos do estilo e do conforto, garantindo que seu cão ou gato fique ainda mais bonito e feliz! - R$29,99</p>
+                        <p class="servicos__1coluna__aviso">Atenção, disponível somente para cães, gatos e pássaros!</p>
+                        <a class="servicos__1coluna__botao" href="./tela - login.html">AGENDE AGORA</a>
+                    </div>
+                    <img class="servicos__imagem" src="./Img/Img - Servicos Tosa.png">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script em JS para recuperar o nome do usuário 
+    <script>
+        // Recupera o nome do usuário do localStorage
+        var username = localStorage.getItem('username');
+        
+        // Exibe o nome do usuário no header
+        if (username) {
+            document.getElementById('user-menu').innerHTML = `
+                <span>Bem-vindo, ${username}</span>
+                `;
+        } else {
+            document.getElementById('user-menu').innerHTML = `
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            `;
+        }
+    </script> -->
+</body>
+</html>

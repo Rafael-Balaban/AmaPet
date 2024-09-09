@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaPet - Cadastro</title>
+    <link rel="icon" href="./Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - cadastro/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="">
+                <p>Produtos e Serviços</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - login.html">
+                <p>Login</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - cadastro.html">
+                <p>Cadastro</p>
+            </a>
+        </div>
+    </header>
+
+    <!-- Formulário de cadastro -->
+    <main>
+        <div class="main-content">
+            <div class="login-box">
+                <form id="formulario__cadastro" action="tela - endereco.html">
+                    <input type="text" id="username" placeholder="Nome de usuário" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <input type="password" id="confirma-senha" placeholder="Digite novamente a senha" required>
+                    <input type="submit" value="Avançar">
+                    <p id="mensagem-erro" style="color: red; display: none;">As senhas não coincidem!</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script em JS para salvar o nome do usuário, e fazer a verificação da senha cadastrada 
+    <script>
+        document.getElementById('formulario__cadastro').addEventListener('submit', function(event) {
+            var senha = document.getElementById('senha').value;
+            var confirmaSenha = document.getElementById('confirma-senha').value;
+            var errorMessage = document.getElementById('mensagem-erro');
+            
+            if (senha !== confirmaSenha) {
+                event.preventDefault(); // Evita o envio do formulário
+                errorMessage.style.display = 'block'; // Mostra a mensagem de erro
+            } else {
+                errorMessage.style.display = 'none'; // Esconde a mensagem de erro caso as senhas coincidam
+                
+                // Salva o nome do usuário no localStorage
+                var username = document.getElementById('username').value;
+                localStorage.setItem('username', username);
+            }
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--verde-escuro);
+    margin: 0;
+    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.footer__texto {
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 20px;
+}
+.footer__contato__info {
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+}
+.footer__contato__info__texto {
+    margin: 0.2em;
+}

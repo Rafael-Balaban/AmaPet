@@ -1,0 +1,11 @@
+.selecao__pet {
+    text-align: center;
+}
+.selecao__pet__titulo {
+    margin: 2em 0 1em 0;
+    font-size: 32px;
+    font-weight: 500;
+}
+.selecao__pet__escolhas {
+    margin: 2em;
+}

@@ -1,0 +1,48 @@
+.produtos {
+    background-color: var(--verde-claro);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.produtos__produtos {
+    display: flex;
+}
+
+.produtos__titulo {
+    padding-top: 1em;
+    font-size: 48px;
+    font-weight: 500;
+}
+.produtos__texto {
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.produtos__produtos__item {
+    width: 50%;
+    margin-bottom: 7em;
+}
+
+.produtos__produtos__item__texto {
+    margin-left: 4.3em;
+    width: 70%;
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produtos__produtos__item__texto__gato {
+    margin-left: 3em;
+    width: 70%;
+    margin-bottom: 1em;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produtos__produtos__item__botao {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: var(--verde-vivo);
+    padding: 0.5em 4em;
+    border-radius: 15px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaPet - Pagamento</title>
+    <link rel="icon" href="./Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - pagamento/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header>
+        <a href="./tela - principal - cadastrado.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="tela - produtos e servicos - cadastrado.html">
+                <p>Produtos e Serviços</p>
+            </a>
+            <div class="cabecalho__user" id="user-menu">
+                <p>Seja Bem Vindo</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formulário para pagamento -->
+    <main>
+        <div class="payment-container">
+            <h2>Informe os dados para o pagamento:</h2>
+            <form action="tela - compra concluida.html">
+                <label for="numero-cartao">Número do Cartão:</label>
+                <input type="text" id="numero-cartao" placeholder="Digite o número do cartão" minlength="16" maxlength="16" required>
+    
+                <div class="card-details">
+                    <label for="validade">Validade:</label>
+                    <input type="text" id="validade" placeholder="MM/AA" minlength="4" maxlength="5" required>
+    
+                    <label for="codigo">Código de Segurança:</label>
+                    <input type="text" id="codigo" placeholder="CVV" minlength="3" maxlength="3" required>
+    
+                    <label for="parcela">Parcelamento:</label>
+                    <select name="parcela">
+                        <option value="a vista" selected>À Vista</option>
+                        <option value="x2">2x</option>
+                        <option value="x3">3x</option>
+                        <option value="x4">4x</option>
+                        <option value="x5">5x</option>
+                        <option value="x6">6x</option>
+                        <option value="x7">7x</option>
+                        <option value="x8">8x</option>
+                        <option value="x9">9x</option>
+                        <option value="x10">10x</option>
+                        <option value="x11">11x</option>
+                        <option value="x12">12x</option>
+                    </select>
+                </div>
+    
+                <button type="submit" class="submit-btn">Concluir compra</button>
+                <button type="button" class="back-btn" onclick="history.back()">Voltar</button>
+            </form>
+    
+            <div class="card-image">
+                <img src="./Img/Img Cartão.png" alt="Cartão de Crédito">
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script em JS para recuperar o nome do usuário 
+    <script>
+        // Recupera o nome do usuário do localStorage
+        var username = localStorage.getItem('username');
+        
+        // Exibe o nome do usuário no header
+        if (username) {
+            document.getElementById('user-menu').innerHTML = `
+                <span>Bem-vindo, ${username}</span>
+                `;
+        } else {
+            document.getElementById('user-menu').innerHTML = `
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            `;
+        }
+    </script> -->
+</body>
+</html>

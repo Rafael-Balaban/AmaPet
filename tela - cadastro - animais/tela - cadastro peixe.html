@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Peixe</title>
+    <link rel="icon" href="./../Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles - peixe/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header>
+        <a href="./../tela - principal - cadastrado.html">
+            <img class="cabecalho__logo" src="./../Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a href="./../tela - principal - cadastrado.html" class="botao-sair">
+                <div class="icone-sair">
+                    <img src="./Img/Logo Sair.png" alt="Imagem Sair">
+                </div>
+                <span>Sair</span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Formulário de cadastramento de Animal -->
+    <main class="container">
+        <div class="lado-verde"></div>
+        <div class="formulario">
+            <form action="./../tela - produtos e servicos - cadastrado.html">
+                <h2>Ficha de cadastro para peixe:</h2>
+                
+                <div class="form-row-1">
+                    <div class="form-row-1-nome">
+                        <label for="nome" >Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="form-row-1-porte">
+                        <label for="porte">Porte:</label>
+                        <input class="porte-pequeno" type="radio" id="porte" name="porte" value="pequeno" required>
+                        <label for="pequeno">Pequeno</label><br>
+                        <input class="porte-medio" type="radio" id="porte" name="porte" value="medio" required>
+                        <label for="medio">Médio</label><br>
+                        <input class="porte-grande" type="radio" id="porte" name="porte" value="grande" required>
+                        <label for="grande">Grande</label>
+                    </div>
+                </div>
+
+                <div class="form-row-2">
+                    <div class="form-row-2-cor">
+                        <label for="cor" >Cor:</label>
+                        <input type="text" id="cor" name="cor" required>
+                    </div>
+
+                    <div class="form-row-2-tipo">
+                        <label for="tipo" >Tipo:</label>
+                        <input type="text" id="tipo" name="tipo" required>
+                    </div>
+
+                    <div class="form-row-2-idade">
+                        <label for="idade" >Idade:</label>
+                        <input type="number" id="idade" name="idade" min="0" max="100" required>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" onclick="history.back()">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./../Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./../Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

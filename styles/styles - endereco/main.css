@@ -1,0 +1,90 @@
+body {
+    background: url('./../../Img/Imagem\ fundo\ -\ endereco.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.form-container {
+    background-color: #ECECEC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+h2 {
+    margin-bottom: 1.2em;
+    text-align: center;
+    color: var(--verde-muito-escuro);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 0.2em;
+}
+
+.form-row-1 {
+    display: flex;
+}
+
+input[type="text"] {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #C1C1C1;
+}
+
+.form-row-1-cep {
+    width: 50%;
+}
+
+.form-row-1-rua {
+    width: 100%;
+}
+
+
+.form-row-2 {
+    display: flex;
+}
+
+input#complemento, input#numero, input#bairro, input#cep, input#rua, input#uf {
+    width: 80%;
+}
+
+.form-row-2-numero {
+    width: 50%;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2em;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #3A8E7C;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #2F6E61;
+}

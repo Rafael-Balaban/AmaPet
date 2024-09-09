@@ -1,0 +1,38 @@
+.divisao__pets__novidades {
+    border-top: 1px solid black; /* Cria a linha preta */
+    margin: 3em 0 0 0; /* Espaçamento em volta da linha */
+}
+
+.novidades {
+    background-color: var(--verde-escuro);
+    padding: 3em 0 5em 0;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    color: var(--preto);
+}
+.novidades__titulo {
+    font: var(--fonte-principal);
+    margin: 0em 0 2em;
+    font-weight: 500;
+    font-size: 20px;
+}
+.novidades__botao {
+    text-decoration: none;
+    background-color: var(--verde-claro);
+    color: var(--preto);
+    margin: 1em 0 3em 0;
+    padding: 1.2em 5em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.novidades__botao:hover {
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.divisao__novidades__footer {
+    border-top: 1px solid black; /* Cria a linha preta */
+    margin: 0; /* Espaçamento em volta da linha */
+}

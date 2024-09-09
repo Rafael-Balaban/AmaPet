@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Concluída</title>
+    <link rel="icon" href="./../Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - compra concluida/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header>
+        <a href="./tela - principal - cadastrado.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="tela - produtos e servicos - cadastrado.html">
+                <p>Produtos e Serviços</p>
+            </a>
+            <div class="cabecalho__user" id="user-menu">
+                <p>Seja Bem Vindo</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Texto e imagem de compra concluída -->
+    <main>
+        <img class="vezinho" src="./Img/Vezinho.png" alt="Simbolo de certo">
+        <h2 class="titulo">Compra Concluída!</h2>
+        <p class="texto">Obrigado por sua compra!
+            <br>
+            Seu pedido foi concluído com sucesso e em breve seu pet receberá todo o carinho que ele merece.
+            <br>
+            Aguardamos você novamente!
+        </p>
+        <a class="botao__continuar__comprando" href="./tela - produtos e servicos - cadastrado.html">Continuar Comprando</a>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./../Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./../Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script em JS para recuperar o nome do usuário 
+    <script>
+        // Recupera o nome do usuário do localStorage
+        var username = localStorage.getItem('username');
+        
+        // Exibe o nome do usuário no header
+        if (username) {
+            document.getElementById('user-menu').innerHTML = `
+                <span>Bem-vindo, ${username}</span>
+                `;
+        } else {
+            document.getElementById('user-menu').innerHTML = `
+                <a href="./tela - login.html">Login</a>
+                <a href="./tela - cadastro.html">Cadastro</a>
+            `;
+        }
+    </script> -->
+</body>
+</html>

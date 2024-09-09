@@ -1,0 +1,97 @@
+main {
+    background-color: #f8f1ec; /* Bege claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./../../Img/Img\ fundo\ -\ Pagamento.png); /* Imagem de fundo dos cachorros */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container principal de pagamento */
+.payment-container {
+    background-color: #ffffff; /* Branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Aumentado para 500px */
+    max-width: 90%; /* Garante que o container não exceda 90% da largura da tela */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Título do formulário */
+.payment-container h2 {
+    font-size: 18px; /* Aumentado para 18px */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilos gerais dos inputs */
+.payment-container label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px; /* Aumentado para 16px */
+}
+
+.payment-container input {
+    width: 100%;
+    padding: 10px; /* Aumentado para 10px */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilos para a seção de detalhes do cartão */
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.card-details label {
+    width: 100%;
+}
+
+.card-details input {
+    width: 100%;
+}
+
+/* Botões */
+.submit-btn, .back-btn {
+    width: 100%;
+    padding: 12px; /* Aumentado para 12px */
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Aumentado para 16px */
+}
+
+.submit-btn {
+    background-color: #2db587; /* Verde */
+    color: #ffffff;
+}
+
+.back-btn {
+    background-color: #d0e4d1; /* Verde claro */
+    color: #4e4e4e;
+}
+
+/* Imagem do cartão de crédito */
+.card-image {
+    position: absolute;
+    top: 1em;
+    right: 1em; /* Ajustado para alinhar dentro do container */
+}
+
+.card-image img {
+    max-width: 10em; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaPet - Login</title>
+    <link rel="icon" href="./Img/Logo - Sem titulo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./styles/styles - login/styles.css">
+</head>
+<body>
+
+    <!-- Cabecalho -->
+    <header class="cabecalho">
+        <a href="./index.html">
+            <img class="cabecalho__logo" src="./Img/Logo.png" alt="Logo AmaPet">
+        </a>
+        <div class="cabecalho__links">
+            <a class="cabecalho__links__link" href="tela - produtos e servicos.html">
+                <p>Produtos e Serviços</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - login.html">
+                <p>Login</p>
+            </a>
+            <a class="cabecalho__links__link" href="./tela - cadastro.html">
+                <p>Cadastro</p>
+            </a>
+        </div>
+    </header>
+
+    <!-- Formulário de Login -->
+    <main>
+        <div class="main-content">
+            <div class="login-box">
+                <form action="./tela - principal - cadastrado.html">
+                    <input type="text" id="username" placeholder="Nome do Usuário" required>
+                    <input type="password" placeholder="Senha" required>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer__texto">
+            <p>Contato:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/WhatsApp.png" alt="Logo WhatsApp">
+                <p class="footer__contato__info__texto" >(51) 99456 - 6177</p>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Email:</p>
+            <div class="footer__contato__info">
+                <img src="./Img/mail.png" alt="Imagem Email">
+                <p class="footer__contato__info__texto">rafael.rb.borba@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script em JS para salvar o nome do usuário 
+    <script>
+        // Salva o nome do usuário no localStorage
+        var username = document.getElementById('username').value;
+        localStorage.setItem('username', username);
+    </script> -->
+</body>
+</html>
